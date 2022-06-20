@@ -30,7 +30,8 @@ namespace Associate_Software_Engineer___Seungbong_Lee
             ClientScript.RegisterClientScriptBlock(this.GetType(), "alert", sb.ToString());
         }
 
-        //
+        // If button clicked, send GET request.
+        // User defined parameters: 1. mime type 2. cat category
         protected void GenerateImageButton_Click(object sender, EventArgs e)
         {
             RestClient client = new RestClient("https://api.thecatapi.com/v1/images/");
